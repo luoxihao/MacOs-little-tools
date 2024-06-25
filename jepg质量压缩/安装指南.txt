@@ -1,0 +1,21 @@
+1依赖安装：
+	双击安装依赖app，会要求打开一个文件，在这里选中workflow依赖安装文件夹内的install_brew_imagemagick.sh文件。
+	此时会跳出一个程序终端！ 不要慌张！！！依照程序终端的提示操作就好，全部是中文的。当显示如下时安装完成：
+----------------------------------------
+Homebrew 已经安装。
+ImageMagick 已经安装。
+验证安装...
+ImageMagick 已成功安装。
+Version: ImageMagick 7.1.1-34 Q16-HDRI aarch64 22301 https://imagemagick.org
+Copyright: (C) 1999 ImageMagick Studio LLC
+License: https://imagemagick.org/script/license.php
+Features: Cipher DPC HDRI Modules OpenMP(5.0) 
+Delegates (built-in): bzlib fontconfig freetype gslib heic jng jp2 jpeg jxl lcms lqr ltdl lzma openexr png ps raw tiff webp xml zlib zstd
+Compiler: gcc (4.2)
+-----------------------------------------
+此时依赖安装部分已经完成！！！！
+2workflow安装
+	打开访达，键盘摁住command + shift + g 会打开一个输入框
+	输入 ~/Library/Services/ 
+	跳转到Services文件夹内
+	将安装包内的扩展名为workflow的所有文件放在Services文件夹内即可正常使用
