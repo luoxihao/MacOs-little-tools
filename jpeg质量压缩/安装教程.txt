@@ -14,8 +14,6 @@ Delegates (built-in): bzlib fontconfig freetype gslib heic jng jp2 jpeg jxl lcms
 Compiler: gcc (4.2)
 -----------------------------------------
 此时依赖安装部分已经完成！！！！
-2workflow安装
-	打开访达，键盘摁住command + shift + g 会打开一个输入框
-	输入 ~/Library/Services/ 
-	跳转到Services文件夹内
-	将安装包内的扩展名为workflow的所有文件放在Services文件夹内即可正常使用
+2 workflow安装
+	双击扩展名为.workflow的文件后，会弹窗“快速操作”安装器，点击安装即可。
+	
