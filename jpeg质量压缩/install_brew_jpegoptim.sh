@@ -1,8 +1,11 @@
 #!/bin/bash
 
+
 # 检查是否已经安装 Homebrew
 if command -v brew >/dev/null 2>&1; then
     echo "Homebrew 已经安装。"
+    echo "正在更新Homebrew"
+    brew update && brew upgrade && brew cleanup
 else
     echo "Homebrew 未安装，正在进行安装..."
 
@@ -23,12 +26,6 @@ else
     if [[ "$(uname)" == "Darwin" ]]; then
         echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
         eval "$(/opt/homebrew/bin/brew shellenv)"
-    fi
-
-    # 设置 Homebrew 环境变量（适用于 Linux）
-    if [[ "$(uname)" == "Linux" ]]; then
-        echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> ~/.profile
-        eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
     fi
 
     echo "Homebrew 安装完成。"
